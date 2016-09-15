@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DIN-Medium.ttf">
+            <string>DIN-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VDSetPickupLocationView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET PICK UP LOCATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HMp-uF-c81">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <fontDescription key="fontDescription" name="DIN-Medium" family="DIN-Medium" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.32156862749999998" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="HMp-uF-c81" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8ao-fX-LyH"/>
+                <constraint firstAttribute="trailing" secondItem="HMp-uF-c81" secondAttribute="trailing" id="G5t-bU-g9C"/>
+                <constraint firstAttribute="bottom" secondItem="HMp-uF-c81" secondAttribute="bottom" id="ceK-jz-UAP"/>
+                <constraint firstItem="HMp-uF-c81" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kid-PB-iLb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="HMp-uF-c81" id="NCF-tJ-CUb"/>
+            </connections>
+        </view>
+    </objects>
+</document>
